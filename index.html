@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfernoMine - Minecraft Server</title>
+    <link rel="stylesheet" href="templatemo-graph-page.css">
+<!-- 
+
+TemplateMo 602 Graph Page
+
+https://templatemo.com/tm-602-graph-page
+
+-->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 13h2v8H3zm4-8h2v13H7zm4-2h2v15h-2zm4 4h2v11h-2zm4-2h2v13h-2z"/>
+                    </svg>
+                </div>
+                <span class="logo-text">InfernoMine</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#dashboard">Statistika</a></li>
+                <li><a href="#contact">Murojat </a></li>
+
+            </ul>
+            <a href="https://www.google.com/search" target="_blank" rel="noopener" title="Search">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="nav-links-mobile" id="navLinksMobile">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#analytics">Analytics</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="geometric-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+            <div class="shape shape4"></div>
+            <div class="shape shape5"></div>
+            <div class="shape shape6"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>InfernoMine<br>haqida</h1>
+                <p>Ushbu  sayt Minecraft serverga bag'ishlandi.</p>
+                <a href="#dashboard" class="cta-button">Boshlash</a>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="city-container">
+                    <div class="building building1">
+                        <div class="building-fill"></div>
+                        <div class="building-windows"></div>
+                    </div>
+                    <div class="building building2">
+                        <div class="building-fill"></div>
+                        <div class="building-windows"></div>
+                    </div>
+                    <div class="building building3">
+                        <div class="building-fill"></div>
+                        <div class="building-windows"></div>
+                    </div>
+                    <div class="building building4">
+                        <div class="building-fill"></div>
+                        <div class="building-windows"></div>
+                    </div>
+                    <div class="neon-line neon-line1"></div>
+                    <div class="neon-line neon-line2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard-section" id="dashboard">
+        <div class="dashboard-container">
+            <h2 class="section-title">Server Malumotlari</h2>
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">🔰</div>
+                        <div class="stat-title">Server Ownerlari</div>
+                    </div>
+                    <div class="stat-value">2-shahs</div>
+                    <div class="stat-description">1-Owner = Terri (Nik)  2-owner = Raiders (Nik)</div>
+                    <div class="stat-chart">
+                        <canvas class="mini-chart" id="miniChart1"></canvas>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-title">Server Ishchilari soni :</div>
+                    </div>
+                    <div class="stat-value">15 Dona</div>
+                    <div class="stat-description">Agarda sizdaham Admin yoki modderlik qobilyati bolsa serverga kiringa va Ownerlarga murojat qiling.</div>
+                    <div class="stat-chart">
+                        <canvas class="mini-chart" id="miniChart2"></canvas>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-title">Serverdagi rejimlar</div>
+                    </div>
+                    <div class="stat-value">4ta rejim</div>
+                    <div class="stat-description">Survival, Anarxiya, buildingBattle, BoxPvP  </div>
+                    <div class="stat-chart">
+                        <canvas class="mini-chart" id="miniChart3"></canvas>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">🚀</div>
+                        <div class="stat-title">Rejimlarning taxminiy ochilish sanalari (Taxminiy)</div>
+                    </div>
+                    <div class="stat-value">(Kechikishi ham mumkin)</div>
+                    <div class="stat-description">Anarxiya : (2025.12.20) Survival : (2026.1.10)  BuildingBattle : (2026.2.10) BoxPvP : (2026.2.30)</div>
+                    <div class="stat-chart">
+                        <canvas class="mini-chart" id="miniChart4"></canvas>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-title">Donate</div>
+                    </div>
+                    <div class="stat-value">+28.5%</div>
+                    <div class="stat-description">Telegramdagi @InfernoDonateBot da barcha to'lovlarni amalga oshiring.</div>
+                    <div class="stat-chart">
+                        <canvas class="mini-chart" id="miniChart5"></canvas>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <div class="stat-icon">⚡</div>
+                        <div class="stat-title">Server Host </div>
+                    </div>
+                    <div class="stat-value">(Boshlang'ich Host)</div>
+                    <div class="stat-description">Server Hosti Aternos bo'lib, keyinchalik Mc Hostlarga alishtiriladi agarda "Donate"dan pul yig'ilsa.</div>
+                    <div class="stat-chart">
+                        <canvas class="mini-chart" id="miniChart6"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+           
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="dashboard-container">
+            <h2 class="section-title">Hizmatlar va fikr-mulohaza</h2>
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="margin-bottom: 30px; font-size: 24px;">Xabar yuborish</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nik</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Adressingiz</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Nima haqida?</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Matn</label>
+                            <textarea id="message" name="message" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="submit" class="cta-button" style="width: 100%;">Xabar yuborish</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Telefon raqam va boshqalar</h3>
+                    
+                    <a href="mailto:hello@graphpage.com" class="contact-item" style="text-decoration: none; color: inherit;">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <p>Ownerlarnig Emmail adresslari : #1 Muhammadali.Nematov0403@gmail.com <br></p>
+                        </div>
+                    </a>
+
+                    <a href="tel:+15551234567" class="contact-item" style="text-decoration: none; color: inherit;">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h4>Murojat uchun :</h4>
+                            <p>+998(77)-481-05-35<br> 24/7 aloqada</p>
+                        </div>
+                    </a>
+
+                    <a href="" target="_blank" rel="noopener" class="contact-item" style="text-decoration: none; color: inherit;">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Ip : InfernoXYZ.aternos.me</h4>
+                            <p>1.8dan,<br>1.21 versiyagacha</p>
+                        </div>
+                    </a>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h4>Onlayn bo'ladigan vaqtlar :</h4>
+                            <p>Harkuni 9:00 AM - 6:00 PM<br>Agarda onlayn bolmasa server ta'mirda bo'lishi mumkin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="copyright">© 2026 Inferno Team. Tezkor foydali va maroqli!  
+            | Designed by <a href="https://templatemo.com" rel="nofollow noopener" target="_blank">TemplateMo</a></p>
+        </div>
+    </footer>
+
+<script src="templatemo-graph-script.js"></script>
+</body>
+</html>
